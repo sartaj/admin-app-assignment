@@ -1,4 +1,5 @@
 import React from "react";
+import { Loader } from 'semantic-ui-react';
 import { useQuery } from "../use-string-query";
 
 const query = `
@@ -134,7 +135,7 @@ export const IntrospectionProvider: React.FC = ({ children }) => {
   const res = useQuery({
     query
   });
-  if (res.fetching) return <React.Fragment>{"Loading..."}</React.Fragment>;
+  if (res.fetching) return <Loader active size='massive' />
   if (res.error) return <React.Fragment>{"NetworkError"}</React.Fragment>;
   return (
     <IntrospectionContext.Provider value={res.data}>

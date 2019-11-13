@@ -2,5 +2,11 @@
     "url": "https://us1.prisma.sh/devoted-health/frontend-interview-api/dev",
     "queriesExcludedFromNav": [
         "authorizationDecisions"
-    ]
+    ],
+    "resultsCard": {
+        "addresses": {
+            "data": ["address1", "address2", "city", "state"],
+            "component": "AddressCard"
+        }
+    }
 }
