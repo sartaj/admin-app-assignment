@@ -1,5 +1,4 @@
 import React from "react";
-import startCase from "lodash/startCase";
 
 const EntityResultsView: React.FC<{
   data?: any;
@@ -9,7 +8,7 @@ const EntityResultsView: React.FC<{
 }> = ({ resultsTypeName, entityId }) => {
   return entityId ? (
     <div>
-      <h1>{startCase(entityId)}</h1>
+      <h1>Details</h1>
       <pre>{`query (id: ${entityId}): ${resultsTypeName}`}</pre>
       <p>Due to time limits, this query has not been implemented.</p>
     </div>
