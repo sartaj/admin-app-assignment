@@ -1,0 +1,6 @@
+{
+    "url": "https://us1.prisma.sh/devoted-health/frontend-interview-api/dev",
+    "queriesExcludedFromNav": [
+        "authorizationDecisions"
+    ]
+}
