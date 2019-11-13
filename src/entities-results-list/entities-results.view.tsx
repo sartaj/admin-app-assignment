@@ -15,6 +15,9 @@ const View: React.FC<{ data: any; entities?: string; entityId?: string }> = ({
       data[entities] &&
       data[entities].map((info: any) => (
         <Card
+          fluid
+          raised={entityId === info.id}
+          color={entityId === info.id ? "blue" : undefined}
           key={info.id}
           onClick={() => {
             navigate(`/${entities}/${info.id}`);

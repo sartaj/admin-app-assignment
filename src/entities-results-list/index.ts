@@ -1,3 +1,3 @@
-import Results from "./results";
+import Results from "./entities-results";
 export default Results;
-export * from "./results";
+export * from "./entities-results";
