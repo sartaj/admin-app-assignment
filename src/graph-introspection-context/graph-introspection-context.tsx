@@ -137,6 +137,7 @@ export const IntrospectionProvider: React.FC = ({ children }) => {
   });
   if (res.fetching) return <Loader active size='massive' />
   if (res.error) return <React.Fragment>{"NetworkError"}</React.Fragment>;
+  console.log(res.data)
   return (
     <IntrospectionContext.Provider value={res.data}>
       {children}

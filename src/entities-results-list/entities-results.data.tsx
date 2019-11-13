@@ -40,10 +40,6 @@ export const ResultsData: React.FC<ResultsDataProps> = ({
 }) => {
   if (!entities) return null;
 
-  // const introspection = useIntrospectionContext();
-  // const s = _.find(["name", entities], introspection.__schema.types);
-  // console.log({entities});
-
   return <ResultsDataQuery entities={entities} children={children} />;
 };
 
