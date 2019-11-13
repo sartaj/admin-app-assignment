@@ -1,3 +1,3 @@
-import Results from "./Results";
+import Results from "./results";
 export default Results;
-export * from "./Results";
+export * from "./results";

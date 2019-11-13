@@ -1,3 +1,3 @@
-import EntitiesNavigation from "./EntitiesNavigation";
+import EntitiesNavigation from "./entities-navigation";
 export default EntitiesNavigation;
-export * from "./EntitiesNavigation";
+export * from "./entities-navigation";

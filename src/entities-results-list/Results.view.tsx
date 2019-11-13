@@ -17,7 +17,7 @@ const View: React.FC<{ data: any; entities?: string; entityId?: string }> = ({
         <Card
           key={info.id}
           onClick={() => {
-            // navigate(`/${entities}/${info.id}`);
+            navigate(`/${entities}/${info.id}`);
           }}
         >
           {Object.keys(info).map((i: string) => (

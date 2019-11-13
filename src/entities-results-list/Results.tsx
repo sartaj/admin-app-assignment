@@ -1,7 +1,7 @@
 import React from "react";
 import { RouteComponentProps } from "@reach/router";
-import Data from "./Results.data";
-import View from "./Results.view";
+import Data from "./results.data";
+import View from "./results.view";
 
 const Results: React.FC<{ entities?: string; entityId?: string }> = ({
   entities, entityId

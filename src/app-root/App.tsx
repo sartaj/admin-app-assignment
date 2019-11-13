@@ -1,10 +1,10 @@
 import React from "react";
 import "semantic-ui-css/semantic.min.css";
-import EntitiesNavigation from "../EntitiesNavigation";
+import EntitiesNavigation from "../entities-navigation";
 import { Router, RouteComponentProps } from "@reach/router";
-import Results from "../Results";
+import Results from "../entities-results-list";
 import { Grid } from "semantic-ui-react";
-import { IntrospectionProvider } from "../Introspection/Introspection";
+import { IntrospectionProvider } from "../graph-introspection-context";
 
 const Details: React.FC<
   RouteComponentProps<{ entities: string; entityId: string }>
@@ -33,13 +33,14 @@ const Route: React.FC<
     </Grid>
   );
 };
+
 const App: React.FC = () => {
   return (
     <IntrospectionProvider>
       <Router>
         <Route path="/" />
         <Route path="/:entities" />
-        <Route path="/:entityId" />
+        <Route path="/:entities/:entityId" />
       </Router>
     </IntrospectionProvider>
   );
